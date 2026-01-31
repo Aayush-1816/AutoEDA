@@ -1,36 +1,49 @@
-# EDA Auto Toolkit
+# 📊 AutoEDA – Automated Exploratory Data Analysis Toolkit
 
-A professional Python-based command-line tool for automated Exploratory Data Analysis (EDA) using pandas, matplotlib, and seaborn.
+A Python-based command-line tool that performs **automated exploratory data analysis (EDA)** and basic visualization on structured datasets.
 
-## Features
+While built as a general data analysis tool, this project can also support **security analytics workflows** such as log exploration, anomaly detection preparation, and pattern discovery.
 
-- Load any CSV dataset
-- Handle missing values (auto-fill with median or "Unknown")
-- Display summary stats and data types
-- Generate basic visualizations:
-  - Categorical count plots
+---
+
+## 🚀 Features
+
+- 📂 Load any CSV dataset
+- 🛠 Automatic missing value handling  
+  - Numerical → filled with median  
+  - Categorical → filled with "Unknown"
+- 📊 Summary statistics and column type analysis
+- 🔍 Null value inspection
+- 📈 Automatic visualisations:
+  - Categorical distribution plots
   - Numerical histograms with KDE
-  - Correlation heatmap
+  - Correlation heatmap for numeric features
 
-## How to Use
+---
+
+## 🛡️ Security Analytics Use Cases
+
+This toolkit can be applied in cybersecurity for:
+
+- Log dataset exploration before detection modeling  
+- Identifying unusual patterns in authentication logs  
+- Preparing structured datasets for anomaly detection  
+- Visualising correlations in security event data  
+
+---
+
+## 🛠 Technologies Used
+
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+
+---
+
+## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/EDA-AutoToolkit.git
-cd EDA-AutoToolkit
+git clone https://github.com/Aayush-1816/AutoEDA.git
+cd AutoEDA
 pip install -r requirements.txt
-python eda_toolkit/eda_main.py
-```
-
-## Sample Dataset
-
-You can place your dataset in the `sample_data/` folder or use your own path.
-
-## Dependencies
-
-- pandas
-- matplotlib
-- seaborn
-
-## License
-
-MIT License
